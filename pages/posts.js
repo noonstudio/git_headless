@@ -10,7 +10,7 @@ export default class extends Component {
   static async getInitialProps() {
 
     // Make request for posts.
-    const response = await axios.get( 'http://wordpress.test/wp-json/wp/v2/posts')
+    const response = await axios.get( 'https://headlesswp.testing-noon.studio/wp-json/wp/v2/posts')
 
     // Return response to posts object in props.
     return {
